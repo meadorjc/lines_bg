@@ -31,6 +31,7 @@ function setup () {
 
   cnv.mouseMoved(findNodes)
   initButtons();
+  
 
   cnv.elt.onmouseleave = function () {
     showLine.x1 = null

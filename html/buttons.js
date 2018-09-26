@@ -46,4 +46,28 @@ function initButtons(){
   lineWidthSlider = createSlider(1, 25, 4, 1);
   lineWidthSlider.position(250, 10);
   lineWidthSlider.style('width', '25px');
+
+
+  // showGrid
+  buttonGrid = createButton('bounce on');
+  buttonGrid.position(300, 10);
+  buttonGrid.mousePressed(function () {
+      for (var i = 0; i < numBalls; i++) {
+        balls[i] = new Ball(
+          random(width),
+          random(height),
+          random(30, 70),
+          i,
+          balls
+        );
+     noStroke()
+     fill(255, 204)
+     }
+     buttonGrid.html('bounce off')
+    }
+    } else {
+      balls = [] 
+      buttonGrid.html('bounce on')
+    }
+  });
 }
