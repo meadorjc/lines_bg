@@ -6,7 +6,6 @@ let bgColor = '#434343'
 let hexToRgbValue = [255, 255, 255];
 
 var grid
-var loopState = false
 var nodes = []
 var nodes_aa = {}
 var cnv
@@ -126,8 +125,8 @@ function findNodes () {
     //if (abs((mouseY - d1y)) < (initLoad.spacing/4)) { d2y = d1y }
 	  
     // Decide connecting node direction
-    console.log((mouseY-d1y),(mouseX-d1x), (mouseY-d1y)/(mouseX-d1x))
-    console.log((Math.atan2(mouseY-d1y, mouseX-d1x) * 180 / Math.PI))
+    //console.log((mouseY-d1y),(mouseX-d1x), (mouseY-d1y)/(mouseX-d1x))
+   // console.log((Math.atan2(mouseY-d1y, mouseX-d1x) * 180 / Math.PI))
 
     deg = Math.atan2(mouseY-d1y, mouseX-d1x) * 180 / Math.PI
     
